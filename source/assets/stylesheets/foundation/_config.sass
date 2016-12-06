@@ -6,28 +6,21 @@
 // *************************************
 
 // -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// ...
-
-// -------------------------------------
 //   Colors
 // -------------------------------------
 
 // ----- Palette ----- //
 
-$blue: #2faae0
-$brown: #755400
-$green: #77b830
-$orange: #dc4d1f
-$yellow: #fabf00
+$c-blue: #52AACA
+$c-green: #88C9A0
+$c-orange: #EBA460
+$c-red: #CD6B6B
 
 // ----- Grayscale ----- //
 
-$gray-light: #eaeaea
-$gray: #555555
-$gray-dark: #333333
+$c-gray-light: #F2F6F8
+$c-gray: #74838B
+$c-gray-dark: #344551
 
 // -------------------------------------
 //   Base
@@ -35,26 +28,24 @@ $gray-dark: #333333
 
 // ----- Borders & Box Shadow ----- //
 
-$b-borderRadius: 4px
+$b-borderRadius: 10px
 $b-borderStyle: solid
-$b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle darken($gray-light, 5%)
-$b-boxShadow: rgba(black, 0.2) 0 1px 3px 0
-$b-boxShadow-lg: rgba(black, 0.1) 0 5px 25px 0
+$b-borderWidth: 2px
+$b-border: $b-borderWidth $b-borderStyle darken($c-gray-light, 5%)
+$b-boxShadow: rgba(black, 0.25) 0 5px 25px 0
+$b-boxShadow-lg: rgba(black, 0.25) 0 10px 50px 0
 
 // ----- Sizing ----- //
 
-$b-space: 20px
-
-// ----- Transitions ----- //
-
-$b-transition: all 400ms cubic-bezier(.55,0,.1,1)
+$b-space: 10px
 
 // ----- Layering ----- //
 
-$z-navbar: 30
-$z-sidebar: 10
-$z-window: 20
+// $z-:
+
+// ----- Width ----- //
+
+$b-maxWidth: 1200px
 
 // -------------------------------------
 //   Typography
@@ -62,7 +53,8 @@ $z-window: 20
 
 // ----- Family ----- //
 
-$t-fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$t-fontFamily: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$t-fontFamily-heading: 'Playfair Display', Georgia, 'Times New Roman', Times, serif
 
 // ----- Line Height ----- //
 
@@ -70,16 +62,10 @@ $t-lineHeight: 1.5
 
 // ----- Size ----- //
 
-$t-fontSize-xs: 12px
-$t-fontSize-s: 14px
-$t-fontSize: 16px
-$t-fontSize-l: 18px
-
-// Headings
-
-$t-heading-fontSize-s: 24px
-$t-heading-fontSize: 36px
-$t-heading-fontSize-l: 90px
+$t-fontSize: 14px
+$t-fontSize-l: 1.5rem
+$t-fontSize-xl: 2rem
+$t-fontSize-xxl: 3.2rem
 
 // -------------------------------------
 //   Modules
@@ -103,15 +89,3 @@ $g-silent: false
 // Selector
 
 $g-selector: if($g-silent, unquote('%'), unquote('.'))
-
-// ----- Navbar ----- //
-
-$navbar-height: ($b-space * 3)
-
-// ----- Sidebar ----- //
-
-$sidebar-width: 290px
-
-// ----- Window ----- //
-
-$window-content-width: 550px
