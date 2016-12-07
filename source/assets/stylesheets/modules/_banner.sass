@@ -14,7 +14,7 @@
   display: flex
   flex-flow: column nowrap
   justify-content: space-between
-  padding: ($b-space * 2.5) ($b-space * 4)
+  padding: ($b-space * 2.5)
   +respond-to($g-m)
     flex-direction: row
     padding: ($b-space * 2.5) ($b-space * 2.5) ($b-space * 2.5) ($b-space * 4)
@@ -46,11 +46,12 @@
   text-align: center
   +respond-to($g-m)
     margin: 0 !important
-    padding-right: $b-space
+    padding-right: ($b-space * 2)
     text-align: left
   small
     color: rgba(white, 0.75)
     display: block
+    margin: ($b-space * 0.75) 0
     +respond-to($g-l)
       display: inline
       margin-left: $b-space
