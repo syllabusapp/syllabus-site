@@ -1,0 +1,57 @@
+// *************************************
+//
+//   Grid
+//   -> Section layout
+//
+// *************************************
+
+.g
+  display: flex
+  flex-wrap: wrap
+  margin-left: -$g-gutter
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Grid ----- //
+
+.g--center
+  justify-content: center
+
+.g--s
+  margin-left: ($g-gutter * -0.5)
+  .g-b
+    padding-left: ($g-gutter * 0.5)
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Box ----- //
+
+.g-b
+  padding-left: $g-gutter
+  width: 100%
+
+// -------------------------------------
+//   Setup
+// -------------------------------------
+
+=g-device-type($namespace: '')
+
+  @each $item in $g-columns
+    @for $index from 1 through $item
+      .g-b--#{$namespace}#{$index}of#{$item}
+        width: percentage($index / $item)
+
+// -------------------------------------
+//   Creation
+// -------------------------------------
+
++g-device-type()
+
+@if $g-defaults
+  @each $breakpoint, $width in $g-defaults
+    @media screen and (min-width: $width)
+      +g-device-type("#{$breakpoint}--")
