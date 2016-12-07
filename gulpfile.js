@@ -15,6 +15,7 @@ var gulp            = require("gulp");
 var autoprefixer    = require("gulp-autoprefixer");
 var connect         = require("gulp-connect");
 var data            = require("gulp-data");
+var file            = require("gulp-file");
 var ghPages         = require("gulp-gh-pages");
 var nunjucksRender  = require("gulp-nunjucks-render");
 var plumber         = require("gulp-plumber");
@@ -91,7 +92,7 @@ gulp.task("default", ["connect", "watch"]);
 // -------------------------------------
 
 gulp.task('deploy', function() {
-  file('CNAME', 'Custom domain url goes here')
+  file('CNAME', 'syllabusapp.com')
     .pipe(gulp.dest('./build'));
   return gulp.src('./build/**/*')
     .pipe(ghPages());
