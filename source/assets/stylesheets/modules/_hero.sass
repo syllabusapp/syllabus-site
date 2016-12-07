@@ -31,18 +31,17 @@
 // -------------------------------------
 
 .hero-circle
-  animation: rotate 30s 100 linear
+  animation: rotate 20s 100 linear
   border: $b-border
   border-radius: 50%
   bottom: 0
-  height: ($b-space * 40)
+  height: ($b-space * 45)
   left: 0
   margin: auto
   position: absolute
   right: 0
   top: 0
-  transform-origin: 50% 55%
-  width: ($b-space * 40)
+  width: ($b-space * 45)
   &::after, &::before
     border: $b-border
     border-radius: 50%
@@ -53,6 +52,6 @@
     right: 0
     top: 0
   &::after
-    transform: translate(#{$b-space * -2}, #{$b-space * 3})
+    transform: scale(0.95) translateY(#{$b-space * -2.5})
   &::before
-    transform: translate(#{$b-space}, #{$b-space * 2})
+    transform: scale(0.95) translateY(#{$b-space * 2.5})

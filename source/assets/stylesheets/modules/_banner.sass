@@ -12,9 +12,12 @@
   box-shadow: $b-boxShadow-lg
   color: white
   display: flex
-  flex-flow: row nowrap
+  flex-flow: column nowrap
   justify-content: space-between
   padding: ($b-space * 2.5) ($b-space * 4)
+  +respond-to($g-m)
+    flex-direction: row
+    padding: ($b-space * 2.5) ($b-space * 2.5) ($b-space * 2.5) ($b-space * 4)
 
 // -------------------------------------
 //   Modifiers
@@ -38,4 +41,16 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.banner-message
+  color: white !important
+  text-align: center
+  +respond-to($g-m)
+    margin: 0 !important
+    padding-right: $b-space
+    text-align: left
+  small
+    color: rgba(white, 0.75)
+    display: block
+    +respond-to($g-l)
+      display: inline
+      margin-left: $b-space
