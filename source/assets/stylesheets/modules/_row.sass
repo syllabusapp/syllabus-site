@@ -15,6 +15,13 @@
 //   Modifiers
 // -------------------------------------
 
+.row--angled
+  +respond-to($g-s)
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)
+    max-height: 550px
+  +respond-to($g-m)
+    max-height: 700px
+
 .row--hero
   overflow: visible
   position: relative
@@ -30,3 +37,7 @@
 
 .row--light
   background: $c-gray-light
+
+.row--orange
+  background: $c-orange
+  color: white
