@@ -24,8 +24,10 @@ body
 // -------------------------------------
 
 ul, p
-  margin-bottom: ($b-space * 2)
+  margin-bottom: $b-space
   margin-top: 0
+  +respond-to($g-s)
+    margin-bottom: ($b-space * 2)
 
 li
   margin-bottom: $b-space

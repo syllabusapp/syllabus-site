@@ -5,7 +5,15 @@
 //
 // *************************************
 
-// .nav
+.nav
+  position: absolute
+  right: 0
+  text-align: right
+  top: $b-space
+  +respond-to($g-s)
+    position: relative
+    right: auto
+    top: auto
 
 // -------------------------------------
 //   Modifiers
@@ -30,11 +38,17 @@
 // -------------------------------------
 
 .nav-item
-  color: $c-gray-dark
-  display: inline-block
-  margin-right: ($b-space * 1.5)
+  color: $c-gray
+  display: block
+  font-size: 0.85rem
   outline: none
-  padding: ($b-space * 0.5) $b-space
+  padding: ($b-space * 0.375) 0
+  +respond-to($g-s)
+    color: $c-gray-dark
+    display: inline-block
+    font-size: 1rem
+    margin-right: ($b-space * 1.5)
+    padding: ($b-space * 0.5) $b-space
   &:focus
     background: rgba($c-blue, 0.1)
     border-radius: ($b-borderRadius * 0.5)

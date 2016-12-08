@@ -8,9 +8,15 @@
 .screen
   background: white
   border: $b-border
-  border-radius: ($b-borderRadius * 3)
+  border-radius: ($b-borderRadius * 1.5)
   box-shadow: $b-boxShadow-lg
-  padding: ($b-space * 5)
+  padding: ($b-space * 2)
+  +respond-to($g-s)
+    border-radius: ($b-borderRadius * 2)
+    padding: ($b-space * 3)
+  +respond-to($g-m)
+    border-radius: ($b-borderRadius * 3)
+    padding: ($b-space * 5)
   img
     border: $b-border
 

@@ -7,7 +7,13 @@
 
 .logo
   display: inline-block
+  margin: $b-space 0
+  max-width: 125px
   outline: none
+  +respond-to($g-s)
+    max-width: none
+  +respond-to($g-m)
+    margin: 0
   &:hover, &:focus
     opacity: 0.75
 

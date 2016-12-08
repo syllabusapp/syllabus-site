@@ -8,10 +8,11 @@
 .input
   border-radius: ($b-borderRadius * 0.5)
   box-shadow: $b-boxShadow
-  margin: 0 auto
-  max-width: 325px
   overflow: hidden
   width: 100%
+  +respond-to($g-s)
+    margin: 0 auto
+    max-width: 325px
   input
     border: none
     display: inline-block

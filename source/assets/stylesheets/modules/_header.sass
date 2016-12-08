@@ -6,12 +6,21 @@
 // *************************************
 
 .header
-  align-items: center
+  align-items: flex-start
   display: flex
-  flex-flow: row nowrap
+  flex-flow: column nowrap
   justify-content: space-between
   margin-bottom: ($b-space * 4)
-  margin-top: ($b-space * 4)
+  margin-top: ($b-space * 2)
+  +respond-to($g-s)
+    align-items: center
+    margin-top: ($b-space * 4)
+  +respond-to($g-m)
+    flex-direction: row
+  .btn
+    display: none
+    +respond-to($g-m)
+      display: inline-block
 
 // -------------------------------------
 //   Modifiers

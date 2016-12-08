@@ -7,6 +7,8 @@
 
 .hero
   position: relative
+  +respond-to($g-s)
+    text-align: center
 
 // -------------------------------------
 //   Modifiers
@@ -35,13 +37,20 @@
   border: $b-border
   border-radius: 50%
   bottom: 0
-  height: ($b-space * 45)
-  left: 0
+  height: ($b-space * 35)
   margin: auto
   position: absolute
-  right: 0
+  right: calc(100% - #{$b-space * 15})
   top: 0
-  width: ($b-space * 45)
+  width: ($b-space * 35)
+  +respond-to($g-s)
+    left: 0
+    height: ($b-space * 30)
+    right: 0
+    width: ($b-space * 30)
+  +respond-to($g-m)
+    height: ($b-space * 45)
+    width: ($b-space * 45)
   &::after, &::before
     border: $b-border
     border-radius: 50%
