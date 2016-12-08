@@ -1,0 +1,64 @@
+// *************************************
+//
+//   Content
+//   -> Responsive text blocks
+//
+// *************************************
+
+.content
+  +respond-to($g-s)
+    text-align: center
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.content--s
+	align-items: center
+	display: flex
+	flex-flow: column nowrap
+	margin-top: ($b-space * 4)
+	text-align: left
+	+respond-to($g-s)
+		flex-direction: row
+		margin: ($b-space * 4) auto 0
+		max-width: 600px
+	+respond-to($g-m)
+		flex-direction: column
+		max-width: 260px
+		text-align: center
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.content-media
+	height: 250px
+	margin-bottom: ($b-space * 1.5)
+	width: 250px
+	+respond-to($g-s)
+		height: 200px
+		margin-bottom: 0
+		width: 200px
+	+respond-to($g-m)
+		height: 250px
+		margin-bottom: ($b-space * 1.5)
+		width: 250px
+
+.content-text
+	+respond-to($g-s)
+		margin-left: ($b-space * 2)
+	+respond-to($g-m)
+		margin-left: 0
