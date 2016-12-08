@@ -92,8 +92,8 @@ gulp.task("default", ["connect", "watch"]);
 // -------------------------------------
 
 gulp.task('deploy', function() {
-  file('CNAME', 'syllabusapp.com')
-    .pipe(gulp.dest('./build'));
+  // file('CNAME', 'syllabusapp.com')
+  //   .pipe(gulp.dest('./build'));
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
