@@ -47,8 +47,9 @@
     color: $c-gray-dark
     display: inline-block
     font-size: 1rem
-    margin-right: ($b-space * 1.5)
     padding: ($b-space * 0.5) $b-space
+  +respond-to($g-m)
+    margin-right: ($b-space * 1.5)
   &:focus
     background: rgba($c-blue, 0.1)
     border-radius: ($b-borderRadius * 0.5)
