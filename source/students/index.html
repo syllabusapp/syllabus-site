@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
+{% import "navigation.html" as nav %}
+
 {% block content %}
 
 <div class="row row--angled row--orange">
-  {% include "navigation.html" %}
+  {{ nav.active('students') }}
   <div class="content well well--s">
     <div class="cell cell--s">
       <p>For Students</p>

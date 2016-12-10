@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
+{% import "navigation.html" as nav %}
+
 {% block content %}
 
 <div class="row row--light">
-  {% include "navigation.html" %}
+  {{ nav.active('', false) }}
   <div class="cell cell--m hero well well--l">
     <div class="hero-circle"></div>
     <h1 class="heading heading--xxl">The first LMS built exclusively with higher education in&nbsp;mind.</h1>

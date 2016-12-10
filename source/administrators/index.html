@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
+{% import "navigation.html" as nav %}
+
 {% block content %}
 
 <div class="row row--blue">
-  {% include "navigation.html" %}
+  {{ nav.active('administrators') }}
   <div class="content well well--m">
     <div class="cell cell--l">
       <p>For Administrators</p>

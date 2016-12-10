@@ -1,12 +1,18 @@
-<header class="header cell">
-  <a href="/" class="logo">
-    <img src="/assets/images/logo.svg" />
-  </a>
-  <nav class="nav">
-    <a href="/students/" class="nav-item">Students</a>
-    <a href="/teachers/" class="nav-item">Teachers</a>
-    <a href="/administrators/" class="nav-item">Administrators</a>
-    <a href="/roadmap/" class="nav-item">Roadmap</a>
-    <a href="#" class="btn">Sign Up</a>
-  </nav>
-</header> 
+{% macro active(page, inverted=true) %}
+  <header class="header {% if inverted %}is-inverted{%endif%} cell">
+    <a href="/" class="logo">
+      {% if inverted %}
+        <img src="/assets/images/logo-white.svg" />
+      {% else %}
+        <img src="/assets/images/logo.svg" />
+      {% endif %}
+    </a>
+    <nav class="nav">
+      <a href="/students/" class="nav-item {% if page == 'students' %}is-active{% endif %}">Students</a>
+      <a href="/teachers/" class="nav-item {% if page == 'teachers' %}is-active{% endif %}">Teachers</a>
+      <a href="/administrators/" class="nav-item {% if page == 'administrators' %}is-active{% endif %}">Administrators</a>
+      <a href="/roadmap/" class="nav-item {% if page == 'roadmap' %}is-active{% endif %}">Roadmap</a>
+      <a href="#" class="btn {% if page == 'teachers' %}btn--red{% endif %} {% if page == 'administrators' %}btn--orange{% endif %}">Sign Up</a>
+    </nav>
+  </header> 
+{% endmacro %}
