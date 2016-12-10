@@ -30,6 +30,19 @@
   position: relative
   width: 100%
 
+// ----- Order ----- //
+
+.g-b--first
+  order: 1
+.g-b--second
+  order: 2
+.g-b--m--first
+  +respond-to($g-m)
+    order: 1
+.g-b--m--second
+  +respond-to($g-m)
+    order: 2
+
 // -------------------------------------
 //   Setup
 // -------------------------------------

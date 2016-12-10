@@ -47,8 +47,32 @@
   color: white
 
 .row--slanted
-	+respond-to($g-m)
-		clip-path: polygon(0% 140px, 100% 0%, 100% calc(100% - 140px), 0% 100%)
+  overflow: visible
+  padding-bottom: ($b-space * 4)
+  padding-top: ($b-space * 4)
+  position: relative
+  +respond-to($g-m)
+    padding-bottom: ($b-space * 12)
+    padding-top: ($b-space * 12)
+  > *
+    position: relative
+    z-index: 10
+  &::after, &::before
+    background: white
+    content: ''
+    display: none
+    height: 140px
+    left: 0
+    position: absolute
+    right: 0
+    +respond-to($g-m)
+      display: block
+  &::after
+    bottom: 0
+    clip-path: polygon(0 100%, 100% 0, 100% 100%)
+  &::before
+    clip-path: polygon(0 0, 100% 0, 0 100%)
+    top: 0
 
 .row--visible
   overflow: visible

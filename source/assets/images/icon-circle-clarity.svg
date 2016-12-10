@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Marketing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Students" transform="translate(-1228.000000, -1648.000000)">
+            <g id="Duo" transform="translate(0.000000, 1432.000000)">
+                <g id="Right" transform="translate(1031.000000, 216.000000)">
+                    <g id="Icon" transform="translate(197.000000, 0.000000)">
+                        <ellipse id="Circle" fill="#52AACA" cx="37.5" cy="37.5" rx="37.5" ry="37.5"></ellipse>
+                        <g id="Diamond" transform="translate(19.500000, 25.000000)">
+                            <path d="M31.0909091,1 L36,7 L-7.10542736e-15,7 L4.90909091,1 L31.0909091,1 Z M18,29 L-7.10542736e-15,7 L36,7 L18,29 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                            <path d="M-6.24500451e-17,7 L36,7" id="Line" stroke="#52AACA" stroke-linecap="square"></path>
+                            <polyline id="Path-2" stroke="#52AACA" stroke-linecap="round" points="4.53515625 1.07568359 9.09643555 7.04077148 18 28.9589844 27.0722656 7.02783203 31.1264648 1.00390625"></polyline>
+                            <polyline id="Path-3" stroke="#52AACA" points="9.07226563 7.0847168 13.6420898 0.985839844 18.0400391 7.01025391 22.5949707 1.00927734 26.9916992 7.01733398"></polyline>
+                            <path d="M18,7 L18,28.5058132" id="Line" stroke="#52AACA" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

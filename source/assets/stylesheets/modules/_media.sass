@@ -14,7 +14,15 @@
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.media--overlap
+  display: none
+  margin: 0
+  +respond-to($g-m)
+    display: block
+    left: 0
+    position: absolute
+    right: 0
+    top: ($b-space * -3)
 
 // -------------------------------------
 //   States
