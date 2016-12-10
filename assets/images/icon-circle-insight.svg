@@ -1,0 +1,9 @@
+<svg width="75" height="75" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Icon
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <ellipse fill="#CD6A6A" cx="37.5" cy="37.5" rx="37.5" ry="37.5"/>
+        <path d="M57 37.59c-3.354 7.424-10.824 12.59-19.5 12.59S21.354 45.015 18 37.59C21.354 30.166 28.824 25 37.5 25S53.646 30.166 57 37.59zm-19.5 6.763a7.037 7.037 0 1 0 0-14.075 7.037 7.037 0 0 0 0 14.075z" fill="#FFF"/>
+    </g>
+</svg>
