@@ -17,10 +17,14 @@
 
 .row--angled
   +respond-to($g-s)
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 140px), 0% 100%)
     max-height: 550px
   +respond-to($g-m)
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 140px), 0% 100%)
     max-height: 700px
+
+.row--blue
+  background: $c-blue
+  color: white
 
 .row--green
   background: $c-green

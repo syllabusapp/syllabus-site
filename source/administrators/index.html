@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row row--blue">
+  {% include "navigation.html" %}
+  <div class="content well well--m">
+    <div class="cell cell--l">
+      <p>For Administrators</p>
+      <hr class="divider divider--s">
+      <h1 class="heading heading--xxl mb5">Less&nbsp;paperwork. Less&nbsp;headaches.</h1>
+    </div>
+    <div class="cell cell--s">
+      <p>With Syllabus, students register for new classes, pay tuition and fill out other miscellaneous documents all online. It then takes these items and quickly organizes them for easy access based on individual students or courses. Once these documents have been compiled, see dozens of various statistics that help you gain insight into how your online school is doing.</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="cell">
+    <div class="g well">
+      <div class="g-b g-b--12of12 g-b--m--5of12">
+        <img src="/assets/images/icon-circle-work.svg" class="mt0">
+        <h2 class="heading heading--xl"><span class="tcb">Less work.</span><br>Students manage their own&nbsp;accounts.</h2>
+        <p>Keeping up with students’ paperwork throughout registration and tuition takes dozens of people. With Syllabus, students manage their own registration and tuition. And with built-in error checking, there is no longer a need to review documents for errors. Naturally keep students accountable and on track, thus improving the chances of success.</p>
+      </div>
+      <div class="g-b g-b--none g-b--m--2of12">
+        <div class="divider divider--vertical"></div>
+      </div>
+      <div class="g-b g-b--12of12 g-b--m--5of12">
+        <img src="/assets/images/icon-circle-insight.svg">
+        <h2 class="heading heading--xl"><span class="tcr">Insight.</span><br>Statistics to know where you stand.</h2>
+        <p>Knowing where your school stands is half the battle. Once you log in, quickly see dozens of statistics such as total number of students, how much tuition has been paid, and much more. No longer will you need to hunt down all the information and tally it up yourself. If something isn’t available that you’d like to see, simply reach out to your support agent.</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="g well">
+      <div class="g-b g-b--12of12 g-b--m--5of12">
+        <img src="/assets/images/icon-circle-student.svg">
+        <h2 class="heading heading--xl">Syllabus is for <span class="tco">Students.</span></h2>
+        <p>Helping students succeed is the highest goal of any college, university or seminary. By providing an easy-to-use platform and help along the way, Syllabus is the best LMS choice to help those students succeed.</p>
+        <a href="/students/" class="btn btn--orange">Learn more</a>
+      </div>
+      <div class="g-b g-b--none g-b--m--2of12">
+        <div class="divider divider--vertical"></div>
+      </div>
+      <div class="g-b g-b--12of12 g-b--m--5of12">
+        <img src="/assets/images/icon-circle-teacher.svg">
+        <h2 class="heading heading--xl">Syllabus is for <span class="tcg">Teachers.</span></h2>
+        <p>To help those students succeed, teachers need to feel empowered to do the best job that they can do. Syllabus provides the perfect tools to create powerful online courses as well as help in managing their daily tasks.</p>
+        <a href="/teachers/" class="btn btn--green">Learn more</a>
+      </div>
+    </div>
+    {% include 'banner.html' %}
+  </div>
+</div>
+
+{% endblock %}

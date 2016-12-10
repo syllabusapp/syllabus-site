@@ -1,25 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon</title>
-    <desc>Created with Sketch.</desc>
+<svg width="75" height="75" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Icon
+    </title>
     <defs>
-        <rect id="path-1" x="23" y="23" width="29" height="29"></rect>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29" height="29" fill="white">
-            <use xlink:href="#path-1"></use>
+        <path id="a" d="M23 23h29v29H23z"/>
+        <mask id="b" x="0" y="0" width="29" height="29" fill="#fff">
+            <use xlink:href="#a"/>
         </mask>
     </defs>
-    <g id="Marketing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Students" transform="translate(-301.000000, -2422.000000)">
-            <g id="Half-Width" transform="translate(301.000000, 2270.000000)">
-                <g id="Copy" transform="translate(0.000000, 152.000000)">
-                    <g id="Icon">
-                        <circle id="Circle" fill="#CD6A6A" cx="37.5" cy="37.5" r="37.5"></circle>
-                        <use id="Rectangle-2" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="6" opacity="0.5" xlink:href="#path-1"></use>
-                        <polygon id="Rectangle-2-Copy" fill="#FFFFFF" points="46 29 46 46 29 46"></polygon>
-                    </g>
-                </g>
-            </g>
-        </g>
+    <g fill="none" fill-rule="evenodd">
+        <circle fill="#CD6A6A" cx="37.5" cy="37.5" r="37.5"/>
+        <use stroke="#FFF" mask="url(#b)" stroke-width="6" opacity=".5" xlink:href="#a"/>
+        <path fill="#FFF" d="M46 29v17H29z"/>
     </g>
 </svg>
