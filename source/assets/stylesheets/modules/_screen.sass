@@ -25,6 +25,23 @@
 //   Modifiers
 // -------------------------------------
 
+.screen--animated
+  animation: swap 10s 1000 ease
+  border-radius: ($b-borderRadius * 1.5)
+  left: 0
+  padding: ($b-space * 2)
+  position: absolute
+  right: 0
+  top: 0
+  &:first-of-type
+    animation-delay: 5s
+  +respond-to($g-s)
+    border-radius: ($b-borderRadius * 2)
+    padding: ($b-space * 3)
+  +respond-to($g-m)
+    bottom: 0
+    top: auto
+  
 .screen--overlap
   display: none
   height: auto
@@ -45,7 +62,12 @@
 //   Context
 // -------------------------------------
 
-// .has-mv-module
+.has-screens
+  height: ($b-space * 27)
+  margin-top: ($b-space * 7)
+  position: relative
+  +respond-to($g-s)
+    height: ($b-space * 30)
 
 // -------------------------------------
 //   Submodules
