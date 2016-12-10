@@ -1,0 +1,80 @@
+// *************************************
+//
+//   Tasks
+//   -> Colored list of assignment types
+//
+// *************************************
+
+.tasks
+	list-style: none
+	padding: 0
+	li
+		margin-bottom: ($b-space * 1.5)
+	p
+		margin-bottom: 0 !important
+	strong
+		display: inline-block
+		margin-right: $b-space
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.task-blue,
+.task-green,
+.task-orange,
+.task-purple,
+.task-red
+	p::before
+		display: inline-block
+		margin-right: $b-space
+		position: relative
+		top: 3px
+
+.task-blue
+	p::before
+		content: url('/assets/images/icon-video.svg')
+	strong
+		color: $c-blue
+
+.task-green
+	p::before
+		content: url('/assets/images/icon-reading.svg')
+	strong
+		color: $c-green
+
+.task-orange
+	p::before
+		content: url('/assets/images/icon-writing.svg')
+	strong
+		color: $c-orange
+
+.task-purple
+	p::before
+		content: url('/assets/images/icon-upload.svg')
+	strong
+		color: $c-purple
+
+.task-red
+	p::before
+		content: url('/assets/images/icon-questions.svg')
+	strong
+		color: $c-red

@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700" rel="stylesheet">
   </head>
   <body>
-    {% block content %} {% endblock %}
-    {% include 'footer.html' %}
+    <div class="wrapper">
+      {% block content %} {% endblock %}
+      {% include 'footer.html' %}
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="/assets/javascripts/application.js"></script>
   </body>
