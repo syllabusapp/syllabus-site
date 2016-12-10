@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Marketing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Teachers" transform="translate(-300.000000, -2233.000000)">
+            <g id="Duo" transform="translate(300.000000, 2192.000000)">
+                <g id="Left" transform="translate(0.000000, 41.000000)">
+                    <g id="Icon">
+                        <ellipse id="Circle" fill="#EBA460" cx="37.5" cy="37.5" rx="37.5" ry="37.5"></ellipse>
+                        <path d="M36,36.1797982 L36,19.0599317 C26.4842287,19.8234617 19,27.7877132 19,37.5 C19,47.7172679 27.2827321,56 37.5,56 C47.7172679,56 56,47.7172679 56,37.5 C56,28.4793321 49.5437336,20.966606 41,19.3306211 L41,39 L40.9533383,39 L40.9938205,39.0701173 L32.3906732,44.0371467 C31.1941871,44.7279382 29.6694125,44.3269399 28.9742436,43.1228719 C28.2838876,41.9271403 28.6989662,40.395052 29.8906732,39.7070197 L36,36.1797982 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
