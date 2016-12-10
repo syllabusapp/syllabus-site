@@ -17,10 +17,14 @@
 
 .row--angled
   +respond-to($g-s)
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%)
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 140px), 0% 100%)
     max-height: 550px
   +respond-to($g-m)
     max-height: 700px
+
+.row--green
+  background: $c-green
+  color: white
 
 .row--hero
   overflow: visible
@@ -28,7 +32,7 @@
   &::before
     background: $c-gray-light
     bottom: 0
-    clip-path: polygon(0% 0%, 100% 0%, 100% 33%, 0% 66%)
+    clip-path: polygon(0% 0%, 100% 0%, 100% 140px, 0% calc(100% - 140px))
     content: ''
     left: 0
     position: absolute
@@ -44,4 +48,12 @@
 
 .row--slanted
 	+respond-to($g-m)
-		clip-path: polygon(0% 33%, 100% 0%, 100% 66%, 0% 100%)
+		clip-path: polygon(0% 140px, 100% 0%, 100% calc(100% - 140px), 0% 100%)
+
+.row--visible
+  overflow: visible
+  &::after, &::before
+    clear: both    
+    content: ''
+    display: table
+    width: 100%
