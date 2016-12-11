@@ -21,19 +21,20 @@
   text-align: left
 
 .content--s
-	align-items: center
-	display: flex
-	flex-flow: column nowrap
-	margin-top: ($b-space * 4)
-	text-align: left
-	+respond-to($g-s)
-		flex-direction: row
-		margin: ($b-space * 4) auto 0
-		max-width: 600px
-	+respond-to($g-m)
-		flex-direction: column
-		max-width: 260px
-		text-align: center
+  align-items: center
+  display: flex
+  flex-flow: column nowrap
+  margin-top: ($b-space * 4)
+  text-align: center
+  +respond-to($g-s)
+    flex-direction: row
+    margin: ($b-space * 4) auto 0
+    max-width: 600px
+    text-align: left
+  +respond-to($g-m)
+    flex-direction: column
+    max-width: 260px
+    text-align: center
 
 // -------------------------------------
 //   States
