@@ -33,14 +33,11 @@
 // -------------------------------------
 
 .hero-circle
-  animation: rotate 20s 100 linear
-  border: $b-border
-  border-radius: 50%
   bottom: 0
   height: ($b-space * 35)
   margin: auto
   position: absolute
-  right: calc(100% - #{$b-space * 15})
+  right: calc(100% - #{$b-space * 20})
   top: 0
   width: ($b-space * 35)
   +respond-to($g-s)
@@ -49,18 +46,5 @@
     right: 0
     width: ($b-space * 30)
   +respond-to($g-m)
-    height: ($b-space * 45)
-    width: ($b-space * 45)
-  &::after, &::before
-    border: $b-border
-    border-radius: 50%
-    bottom: 0
-    content: ''
-    left: 0
-    position: absolute
-    right: 0
-    top: 0
-  &::after
-    transform: scale(0.95) translateY(#{$b-space * -2.5})
-  &::before
-    transform: scale(0.95) translateY(#{$b-space * 2.5})
+    height: ($b-space * 50)
+    width: ($b-space * 50)
