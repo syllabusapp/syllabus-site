@@ -1,0 +1,53 @@
+// *************************************
+//
+//   Form
+//   -> Subsequent inputs
+//
+// *************************************
+
+.form
+  input[type="email"],
+  input[type="text"]
+    border: 1px solid lighten($c-gray, 40%)
+    border-radius: $b-borderRadius
+    box-shadow: rgba($c-gray-dark, 0.05) 0 1px 2px 0 inset
+    display: block
+    font-size: 1rem
+    margin-bottom: ($b-space * 2)
+    margin-top: ($b-space * 0.5)
+    outline: none
+    padding: $b-space ($b-space * 1.25)
+    width: 100%
+    &:focus
+      border-color: $c-blue
+  input[type="submit"]
+    font-size: 1rem
+    padding: $b-space
+  label
+    color: $c-gray
+    font-size: 0.75rem
+    margin: 0
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// .mv-module-submodules

@@ -8,14 +8,14 @@
 .screen
   background: white
   border: $b-border
-  border-radius: ($b-borderRadius * 1.5)
+  border-radius: ($b-borderRadius * 5)
   box-shadow: $b-boxShadow-lg
   padding: ($b-space * 2)
   +respond-to($g-s)
-    border-radius: ($b-borderRadius * 2)
+    border-radius: ($b-borderRadius * 7)
     padding: ($b-space * 3)
   +respond-to($g-m)
-    border-radius: ($b-borderRadius * 3)
+    border-radius: ($b-borderRadius * 10)
     padding: ($b-space * 5)
   img
     border: $b-border
@@ -27,7 +27,7 @@
 
 .screen--animated
   animation: swap 10s 1000 ease
-  border-radius: ($b-borderRadius * 1.5)
+  border-radius: ($b-borderRadius * 5)
   left: 0
   padding: ($b-space * 2)
   position: absolute
@@ -36,7 +36,7 @@
   &:first-of-type
     animation-delay: 5s
   +respond-to($g-s)
-    border-radius: ($b-borderRadius * 2)
+    border-radius: ($b-borderRadius * 7)
     padding: ($b-space * 3)
   +respond-to($g-m)
     bottom: 0

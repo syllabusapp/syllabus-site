@@ -8,7 +8,7 @@
 .divider
   border: none
   border-top: $b-border
-  margin: $b-space 0 ($b-space * 2)
+  margin: ($b-space * 1.5) 0
 
 // -------------------------------------
 //   Modifiers
@@ -19,10 +19,12 @@
 
 .divider--s
   border-color: white
-  margin-left: auto
+  margin-left: 0
   margin-right: auto
   opacity: 0.25
   width: ($b-space * 3)
+  +respond-to($g-s)
+    margin-left: auto
 
 .divider--vertical
   border-right: $b-border
