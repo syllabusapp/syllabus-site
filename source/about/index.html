@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% import "navigation.html" as nav %}
+
+{% block content %}
+
+<div class="row row--light">
+  {{ nav.active('about', false) }}
+  <div class="cell well well--l mb5">
+    <div class="cell cell--l">
+      <div class="g">
+        <div class="g-b g-b--12of12 g-b--m--10of12">
+          <h1 class="heading heading--xxl">Serving <span class="tco">students,</span> <span class="tcg">teachers</span> and&nbsp;<span class="tcb">administrators.</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="well well--s">
+      <hr class="divider">
+    </div>
+    <div class="cell cell--l">
+      <div class="g g--right">
+        <div class="g-b g-b--12of12 g-b--m--6of12">
+          <p>The ultimate purpose for Syllabus is to help students, teachers and administrators have a better online schooling experience. By creating a sophisticated and easy to use system, Syllabus helps any college, university or seminar create an entire online school with ease.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="cell well">
+    <div class="cell cell--l">
+      <div class="g">
+        <div class="g-b g-b--12of12 g-b--m--5of12">
+          <h2 class="heading heading--xl">Platform Roadmap</h2>
+          <p class="mb5">Syllabus is in the early stages of design &amp; development. In order to complete and fulfill the demand for a more modern LMS, a specific roadmap must be followed. This roadmap shows what phases have been complete, what is currently being work on and what is coming up.</p>
+        </div>
+        <div class="g-b g-b--12of12 g-b--m--7of12">
+          <ul class="roadmap">
+            <li class="roadmap-complete">
+							<p class="mb05 tcg">Complete</p>
+              <h3 class="heading heading--l">Conceptualization</h3>
+              <p>Syllabus began by thinking through what online schools needed most. This was distilled down into a basic feature list of which this site is made of. To learn more about the Syllabus concept, simply browse the additional apages in this site.</p>
+            </li>
+            <li class="roadmap-current">
+							<p class="mb05 tco">In-progress</p>
+              <h3 class="heading heading--l">Design & Front-end Development</h3>
+              <p>Creation of a full design system for Syllabus and front-end templates is currently underway. This requires several phases of research, wireframes, static designs and front-end prototypes. Syllabus is currently working with respected universities during the research phase.</p>
+            </li>
+            <li>
+							<span>Coming Up</span>
+              <h3 class="heading heading--l">Full System Development</h3>
+              <p class="mb0">This is also known as "connecting the dots." Since the majority of work will be complete by this stage, the only remaining piece is to get a developer to create the appropriate databases, set up the correct servers and prepare the system to be used.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% include 'banner.html' %}
+  </div>
+</div>
+
+{% endblock %}

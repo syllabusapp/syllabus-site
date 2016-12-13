@@ -107,37 +107,3 @@ function ico() {
   render();
 }
 ico();
-
-function knot() {
-  var target = document.getElementById('three-knot');
-  var config = setup(target);
-  var scene = new THREE.Scene();
-
-  var camera = new THREE.PerspectiveCamera(25, config.width / config.height, 0.1, 1000);
-  camera.position.y = 20;
-  camera.position.z = 45;
-
-  var renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(target.offsetWidth, target.offsetWidth);
-  target.appendChild(renderer.domElement);
-
-  var knotGeometry = new THREE.TorusKnotGeometry(6, 1, 300, 20 );
-  var knotMaterial = new THREE.MeshLambertMaterial({color: 0xffffff, emissive: 0xcdd6da});
-  var knot = new THREE.Mesh(knotGeometry, knotMaterial);
-  camera.lookAt(knot.position);
-  scene.add(knot);
-
-  var pointLight = new THREE.SpotLight(0xffffff, 0.2);
-  pointLight.position.set(-5, 10, 10);
-  scene.add(pointLight);
-
-	function render() {
-		requestAnimationFrame(render);
-		knot.rotation.x += 0.001;
-		knot.rotation.y += 0.001;
-		renderer.render(scene, camera);
-	}
-	render();
-}
-knot();
