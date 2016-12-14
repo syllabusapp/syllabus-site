@@ -59,17 +59,18 @@
 // -------------------------------------
 
 .content-media
-	height: 250px
-	margin-bottom: ($b-space * 1.5)
-	width: 250px
-	+respond-to($g-s)
-		height: 200px
-		margin-bottom: 0
-		width: 200px
-	+respond-to($g-m)
-		height: 250px
-		margin-bottom: ($b-space * 1.5)
-		width: 250px
+  flex-shrink: 0
+  height: 250px
+  margin-bottom: ($b-space * 1.5)
+  width: 250px
+  +respond-to($g-s)
+    height: 200px
+    margin-bottom: 0
+    width: 200px
+  +respond-to($g-m)
+    height: 250px
+    margin-bottom: ($b-space * 1.5)
+    width: 250px
 
 .content-text
 	+respond-to($g-s)
