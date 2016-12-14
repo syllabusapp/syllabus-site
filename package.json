@@ -16,6 +16,7 @@
     "gulp-webpack": "^1.5.0"
   },
   "dependencies": {
+    "jquery": "^3.1.1",
     "three": "^0.82.1"
   }
 }

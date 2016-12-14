@@ -4,33 +4,98 @@
 {% block content %}
 
 <div class="row">
-  {{ nav.active('about', false) }}
-  <div class="cell cell--l well well--l mb5">
+  {{ nav.active('', false) }}
+  <div class="cell cell--l well well--l">
     <div class="cell">
       <div class="g">
-        <div class="g-b g-b--12of12 g-b--m--4of12">
+        <div class="content content--invert g-b g-b--12of12 g-b--m--4of12">
           <h1 class="heading heading--xxl">We need your&nbsp;input!</h1>
-          <p>If you are in the higher education industry, we need your input to help make Syllabus the best learning management system for colleges, universities and seminaries. If you complete this form, we will keep you informed with exclusive offers that only those who are interested early will be able to get!</p>
+          <p class="mb5">If you are in the higher education industry, we need your input to help make Syllabus the best learning management system for colleges, universities and seminaries. If you complete this form, we will keep you informed with exclusive offers that only those who are interested early will be able to get!</p>
         </div>
-        <div class="g-b g-b--12of12 g-b--m--8of12">
-          <form class="form g g--s">
+        <div class="g-b g-b--12of12 g-b--m--8of12" id="finished">
+          <form class="form g g--s" id="contact" action="https://formspree.io/hello@syllabusapp.com" method="POST">
             <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
               Name:
-              <input type="text" placeholder="Johnny Appleseed" />
+              <input type="text" placeholder="Andy Dwyer" name="Name"/>
             </label>
             <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
               Email:
-              <input type="email" placeholder="example@email.com" />
+              <input type="email" placeholder="example@email.com" name="Email"/>
             </label>
             <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
               School:
-              <input type="text" placeholder="University of Pawnee" />
+              <input type="text" placeholder="University of Pawnee" name="School"/>
             </label>
             <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
-              Phone:
-              <input type="text" placeholder="(123) 456-7890" />
+              Would something like this help you?
+              <select name="Interested?">
+                <option disabled selected>Please select an option</option>
+                <option>Yes, definitely!</option>
+                <option>I think so.</option>
+                <option>Not sure.</option>
+                <option>No, I already use something I like.</option>
+                <option>No, I'm not one who would use it.</option>
+              </select>
+            </label>
+            <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
+              How much do you currently pay for your LMS?
+              <select name="Currently_Paying">
+                <option disabled selected>Please select an option</option>
+                <option>$1,000 to $1,999</option>
+                <option>$2,000 to $2,999</option>
+                <option>$3,000 to $3,999</option>
+                <option>$4,000 to $4,999</option>
+                <option>$5,000 to $5,999</option>
+                <option>$6,000 to $6,999</option>
+                <option>$7,000 to $7,999</option>
+                <option>$8,000 to $8,999</option>
+                <option>$9,000 and upwards</option>
+              </select>
+            </label>
+            <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
+              How much would like to be paying?
+              <select name="Ideally_Paying">
+                <option disabled selected>Please select an option</option>
+                <option>$1,000 to $1,999</option>
+                <option>$2,000 to $2,999</option>
+                <option>$3,000 to $3,999</option>
+                <option>$4,000 to $4,999</option>
+                <option>$5,000 to $5,999</option>
+                <option>$6,000 to $6,999</option>
+                <option>$7,000 to $7,999</option>
+                <option>$8,000 to $8,999</option>
+                <option>$9,000 and upwards</option>
+                <option>What I pay now is okay</option>
+              </select>
+            </label>
+            <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
+              Which LMS are you currently using?
+              <select name="Current_LMS">
+                <option disabled selected>Please select an option</option>
+                <option>Moodle</option>
+                <option>Edmodo</option>
+                <option>Blackboard</option>
+                <option>Other</option>
+                <option>I'm not sure</option>
+              </select>
+            </label>
+            <label class="g-b g-b--12of12 g-b--s--6of12 g-b--m--12of12 g-b--l--6of12">
+              What is most important to you?
+              <select name="Important">
+                <option disabled selected>Please select an option</option>
+                <option>A simple, easy to use interface</option>
+                <option>A robust set of tools</option>
+                <option>Easy access to other people</option>
+                <option>Platform stability, I hate bugs</option>
+								<option>Other (please specificy below)</option>
+              </select>
             </label>
             <label class="g-b g-b--12of12">
+              Anything specific you'd like to add?
+							<textarea placeholder="Type here..." name="Notes"></textarea>
+            </label>
+            <label class="g-b g-b--12of12">
+              <input type="hidden" name="_next" value="http://syllabusapp.com/thanks/">
               <input class="btn btn--block" type="submit" value="Submit" />
             </label>
           </form>
