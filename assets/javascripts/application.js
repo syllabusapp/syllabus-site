@@ -82,8 +82,8 @@ var NV =
 
 	    function render() {
 	      requestAnimationFrame(render);
-	      circle.rotation.x += 0.005;
-	      circle.rotation.y += 0.005;
+	      circle.rotation.x += 0.00125;
+	      circle.rotation.y += 0.00125;
 	      renderer.render(scene, camera);
 	    }
 	    render();
@@ -117,20 +117,20 @@ var NV =
 
 	    function render() {
 	      requestAnimationFrame(render);
-	      cone.rotation.y += 0.005;
+	      cone.rotation.y += 0.00125;
 	      renderer.render(scene, camera);
 	    }
 	    render();
 	  }
 	  cone();
 
-	  function ico() {
+	    function ico() {
 	    var target = document.getElementById('three-ico');
 	    var config = setup(target);
 	    var scene = new THREE.Scene();
 
 	    var camera = new THREE.PerspectiveCamera(25, config.width / config.height, 0.1, 1000);
-	    camera.position.y = 20;
+	    // camera.position.y = 20;
 	    camera.position.z = 45;
 
 	    var renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
@@ -138,20 +138,20 @@ var NV =
 	    renderer.setSize(target.offsetWidth, target.offsetWidth);
 	    target.appendChild(renderer.domElement);
 
-	    var icoGeometry = new THREE.IcosahedronGeometry(9, 0);
+	    var icoGeometry = new THREE.OctahedronGeometry(9, 0);
 	    var icoMaterial = new THREE.MeshLambertMaterial({color: 0xffffff, emissive: 0x91D1A9});
 	    var ico = new THREE.Mesh(icoGeometry, icoMaterial);
 	    camera.lookAt(ico.position);
 	    scene.add(ico);
-
-	    var pointLight = new THREE.SpotLight(0xffffff, 0.4);
-	    pointLight.position.set(-5, 10, 10);
+	    
+	    var pointLight = new THREE.SpotLight(0xffffff, 0.3);
+	    pointLight.position.set(-30, 40, 50);
 	    scene.add(pointLight);
 
 	    function render() {
 	      requestAnimationFrame(render);
-	      ico.rotation.x += 0.005;
-	      ico.rotation.y += 0.005;
+	      ico.rotation.x += 0.00125;
+	      ico.rotation.y += 0.00125;
 	      renderer.render(scene, camera);
 	    }
 	    render();
